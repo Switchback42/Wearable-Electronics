@@ -6,7 +6,7 @@ I have added my own spin, as well as comments.
 You can find the original sketch on the Way Back Machine at:
 https://web.archive.org/web/20170228191434/http://www.electronicfashion.co.uk/workshop_checklists.htm
 
-Please visit https://www.rapidtables.com/convert/color/index.html to find additional hexcodes fo changing colors
+Please visit https://www.rapidtables.com/convert/color/index.html to find additional hexcodes for changing colors
 */
 
 // Coding e-Textiles:  Spaulding High School Wearable Electronics
