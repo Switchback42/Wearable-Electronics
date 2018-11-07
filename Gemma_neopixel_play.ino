@@ -20,7 +20,8 @@ Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, NEOPIN);
  
 uint32_t color1 = 0xff0000, // red  
          color2 = 0x00ff00, // green
-         color3 = 0x0000ff; // blue
+         color3 = 0x0000ff, // blue
+         color4 = 0xff00ff; // purple
      
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT); 
