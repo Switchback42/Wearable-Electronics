@@ -23,7 +23,7 @@ A light sensor triggers a NeoPixel animation.
 
 #include <Adafruit_NeoPixel.h>
 
-#define NUM_LEDS 8
+#define NUM_LEDS 7 //I have 7 NeoPixels sewn onto a ribbon in the center of my sweater
 #define LED_PIN 11
 #define lightSensor A0
 int lightValue;
@@ -31,13 +31,13 @@ int lightValue;
 Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN);
 
 int speakerPin = 7;
-int buttonPin = A3; //Sew a Lilypad Button Board to pin A1 or A5.  These pins have an internal pull-up resistor.
+int buttonPin = A3; //Sew a Lilypad Button Board to pin A1, A3, or A5.  These pins have an internal pull-up resistor.
                     //Pressing this button will turn music on (if it's off) or off (if it's on).  The LED patterns will play regardless.
 int led1 = 5; 
 int led2 = 6; //pwm capabilities (if needed)
 int led3 = 8;
 int led4 = 9;  
-int motor = 3;  //the motor is triggered by the temperature sensor.
+int motor = 3;  //the motor is triggered by the temperature sensor
 int led5 = 13;  //Rudolph's nose will turn on with motor, triggered by temperature sensor
 int sensorPin = A2; //TEMPERATURE
 int sensorValue;
@@ -59,7 +59,7 @@ strip.show();
 pinMode(lightSensor, INPUT);
 //Serial.begin(9600);  //Uncomment this line to see light sensor data...initializes the serial port
 pinMode(sensorPin, INPUT); //set the temp sensor to input
-//Serial.begin(9600); ////Uncomment this line to see temp sensor data ... initializes the serial port
+//Serial.begin(9600);  //Uncomment this line to see temp sensor data ... initializes the serial port
 pinMode(motor, OUTPUT);  //makes the motor an output
 pinMode(speakerPin, OUTPUT);
 pinMode(buttonPin, INPUT_PULLUP);// Lilypad buttons, on pin A5, need to use an internal pullup resistor
@@ -68,7 +68,7 @@ pinMode(led2, OUTPUT);
 pinMode(led3, OUTPUT);
 pinMode(led4, OUTPUT);
 pinMode(led5, OUTPUT);
-pinMode(A1, OUTPUT);   // use with the positive tab of the LIGHT or TEMP SENSOR
+pinMode(A1, OUTPUT);    // use with the positive tab of the LIGHT or TEMP SENSOR
 digitalWrite(A1, HIGH); //use with the postive tab of the LIGHT or TEMP SENSOR
 }
 
