@@ -1,5 +1,5 @@
 //Saved as LilyTiny_Tardis.ino
-//This code works on an Attiny85 connected to 4 NeoPixels on pin 0 and one LilyPad RBG LED on pins 1-3
+//This code works on a LilyTiny/ LilyTwinkle (Attiny85 running 8 HZ) connected to 4 NeoPixels on pin 0 and one LilyPad RBG LED on pins 1-3
 //It may be powered through a couple of coin cell batteries.
 
 Created by Jill Dawson (relying heavily on Adafruit sample code).
