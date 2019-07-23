@@ -11,11 +11,14 @@ Programmer:  USBasp
 This program turns the onboard LED on or off, when pressing a pushbutton attached to pin 2.
 A LilyPad led (with resistor) is on Pin D0 (aka 0).
 
- http://www.arduino.cc/en/Tutorial/Button
+Based upon sample code from http://www.arduino.cc/en/Tutorial/Button
+ 
+ Workshop by Jill Dawson
+ Intro to Programming with Arduino:  An Electrifying Way to Add Color, Light, and Interactivity to Your Creations
+
  */
 
 // constants don't change
-
 const int buttonPin = 2;     // the number of the pushbutton pin
 const int LED =  0;      // the number of the LED pin
 
