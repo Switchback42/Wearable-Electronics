@@ -1,6 +1,20 @@
-// Coding e-Textiles:  Spaulding High School Wearable Electronics
-#include <Adafruit_NeoPixel.h> // this sketch requires you to download the Adafruit_NeoPixel library, which will give
-                               // you access to some useful sample code
+/*
+MJ_light_sensor_ship.ino
+
+Board: Adafruit Gemma V2 (ATtiny85 @8MHZ)
+Programmer:  USBTinyISP
+
+Board: Gemma M0
+Programmer:  USBasp
+
+
+Workshop by Jill Dawson:
+Intro to Programming with Arduino:  An Electrifying Way to Add Color, Light, and Interactivity to Your Creations
+
+*/
+
+#include <Adafruit_NeoPixel.h> /* this sketch requires you to download the Adafruit_NeoPixel library, which will give
+                                  you access to some useful sample code */
 
 #define NEOPIN 1    // this is the # of the pad that connects to the NeoPixel's data-in pin
 #define NUMPIXELS 4 // this is the # of NeoPixels in the strand
@@ -9,9 +23,12 @@
  
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, NEOPIN); 
  
-//By changing the hexcodes below, you can change the colors of your NeoPixels.
-//If you want to add more than four colors, you can do so here.  
-//Notice there are commas following all but the last hexcode; the last one has a semicolon.
+/*
+By changing the hexcodes below, you can change the colors of your NeoPixels.
+If you want to add more than four colors, you can do so here.  
+Notice there are commas following all but the last hexcode; the last one has a semicolon.
+*/
+  
 uint32_t color1 = 0xffff1a, // yellow
          color2 = 0x33cc33, // green
          color3 = 0x004d4d, // teal
@@ -27,9 +44,9 @@ uint32_t color1 = 0xffff1a, // yellow
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT); 
   digitalWrite(LED_BUILTIN,HIGH); //This turns the onboard LED on so you know your Gemma is receiving power.
-  pinMode(SENSOR, INPUT_PULLUP); // Enable pull-up resistor on sensor pin
+  pinMode(SENSOR, INPUT_PULLUP);  // Enable pull-up resistor on sensor pin
   pixels.begin();
-  pixels.setBrightness(197);  //What would happen if you changed this value?
+  pixels.setBrightness(197);  //  What would happen if you changed this value?
 }
  
 void loop() {
@@ -122,10 +139,4 @@ void spaceship(){
    // pixels.setPixelColor(3, color1);
    // pixels.show();
    //delay(200);
-
-    
-
-
-   
-
 }
