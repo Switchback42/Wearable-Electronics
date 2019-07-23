@@ -1,6 +1,12 @@
 /*
 Gemma_neopixel_play.ino
 
+Board: Adafruit Gemma V2 (ATtiny85 @8MHZ)
+Programmer:  USBTinyISP
+
+Board: Gemma M0
+Programmer:  USBasp
+
 Workshop by Jill Dawson
 
 This code is an adaptation of code I found on Electronic Handbag Project website. 
@@ -11,7 +17,8 @@ https://web.archive.org/web/20170228191434/http://www.electronicfashion.co.uk/wo
 Please visit https://www.rapidtables.com/convert/color/index.html to find additional hexcodes fo changing colors
 */
 
-// Coding e-Textiles:  Spaulding High School Wearable Electronics
+// Intro to Programming with Arduino:  An Electrifying Way to Add Color, Light, and Interactivity to Your Creations
+
 #include <Adafruit_NeoPixel.h> // this sketch requires you to download the Adafruit_NeoPixel library, which will give
                                // you access to some useful sample code
 
