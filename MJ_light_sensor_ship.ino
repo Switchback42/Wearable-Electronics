@@ -43,7 +43,7 @@ uint32_t color1 = 0xffff1a, // yellow
      
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT); 
-  digitalWrite(LED_BUILTIN,HIGH); //This turns the onboard LED on so you know your Gemma is receiving power.
+  digitalWrite(LED_BUILTIN,HIGH); //This turns the onboard LED.
   pinMode(SENSOR, INPUT_PULLUP);  // Enable pull-up resistor on sensor pin
   pixels.begin();
   pixels.setBrightness(197);  //  What would happen if you changed this value?
@@ -57,11 +57,11 @@ if(!digitalRead(SENSOR)) {                 // Is light detected?  If so, turn of
      pixels.setPixelColor(3, 0);
      pixels.show();
     
-     } else {     // If it's dark 
-spaceship();      // call spaceship function
+     } else {     // If it's dark... 
+spaceship();      // call the spaceship function.
   
   }
-  delay(2);; // Pause 2 ms before repeating
+  delay(2); // Pause 2 ms before repeating
 }
 
 void spaceship(){
@@ -125,18 +125,4 @@ void spaceship(){
     pixels.setPixelColor(3, color3);
     pixels.show();
     delay(200);                      //What do you think this code is doing?
-    // pixels.setPixelColor(0, 0);
-   // pixels.setPixelColor(1, 0);
-    // pixels.setPixelColor(2, 0);
-    // pixels.setPixelColor(3, 0);
-    // pixels.show();
-    // delay(400);                      //What do you think this code is doing?
-
-   //original
-   // pixels.setPixelColor(0, color2);
-   // pixels.setPixelColor(1, color3);
-   // pixels.setPixelColor(2, color4);
-   // pixels.setPixelColor(3, color1);
-   // pixels.show();
-   //delay(200);
 }
