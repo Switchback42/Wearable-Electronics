@@ -7,7 +7,7 @@
 int led1 = 0;
 int led2 = 1;
 
-int scriptNumber = 1; //here you can select one of 4 scrips
+int scriptNumber = 1; //here you can select one of 4 scripts
 
 
 //if scriptNumber = 1: in the dark, the led on pin 1 is off & the led on pin 0 is on (& vice versa)
